@@ -6,7 +6,7 @@ import { z } from "zod";
 
 // --- Config ---
 
-const SPEAKR_URL = process.env.SPEAKR_URL || "http://172.22.252.179:8899";
+const SPEAKR_URL = process.env.SPEAKR_URL || "http://localhost:8899";
 const SPEAKR_TOKEN = process.env.SPEAKR_TOKEN;
 
 if (!SPEAKR_TOKEN) {

@@ -19,7 +19,7 @@ Restart Claude Code / Claude Desktop after setup.
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `SPEAKR_URL` | No | Speakr instance URL (default: `http://172.22.252.179:8899`) |
+| `SPEAKR_URL` | No | Speakr instance URL (default: `http://localhost:8899`) |
 | `SPEAKR_TOKEN` | Yes | API token from Speakr settings |
 
 ### Getting an API token
@@ -39,7 +39,7 @@ Add to `~/.claude/settings.json`:
       "command": "node",
       "args": ["/path/to/mcp-collection/local-speakr/dist/index.js"],
       "env": {
-        "SPEAKR_URL": "http://172.22.252.179:8899",
+        "SPEAKR_URL": "http://localhost:8899",
         "SPEAKR_TOKEN": "your-token-here"
       }
     }
@@ -58,7 +58,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) o
       "command": "node",
       "args": ["/path/to/mcp-collection/local-speakr/dist/index.js"],
       "env": {
-        "SPEAKR_URL": "http://172.22.252.179:8899",
+        "SPEAKR_URL": "http://localhost:8899",
         "SPEAKR_TOKEN": "your-token-here"
       }
     }
