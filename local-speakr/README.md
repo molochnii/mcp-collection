@@ -2,13 +2,18 @@
 
 MCP server for [Speakr](https://github.com/murtaza-nasir/speakr) — self-hosted AI transcription platform.
 
-## Setup
+## Quick Setup
 
 ```bash
 cd local-speakr
 npm install
 npm run build
+npm run setup
 ```
+
+The setup script will ask for your Speakr URL and API token, then automatically add the MCP server config to both **Claude Code CLI** (`~/.claude/settings.json`) and **Claude Desktop** (`claude_desktop_config.json`).
+
+Restart Claude Code / Claude Desktop after setup.
 
 ## Environment variables
 
